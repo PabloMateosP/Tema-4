@@ -1,4 +1,4 @@
-package Arrays.Practica;
+package Arrays.Actividad4_4;
 
 public class Persona {
     String name;
@@ -11,6 +11,7 @@ public class Persona {
 
     @Override
     public String toString() {
+        String resultado =
         return name;
     }
 

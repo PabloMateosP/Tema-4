@@ -1,4 +1,6 @@
-package Arrays.Practica;
+package Arrays.Actividad4_4;
+
+import Arrays.Actividad4_4.Persona;
 
 public class CompararPersonas {
     public static void main(String[] args) {
