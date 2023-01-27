@@ -12,5 +12,6 @@ public class Persona {
         String grupoFinal = name + " tiene: " + age + " años";
         return grupoFinal;
     }
+
 }
 
