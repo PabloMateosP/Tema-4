@@ -29,31 +29,28 @@ public class mainCorreccion {
         System.out.println("Copia del rango :");
         int[] array4 = Arrays.copyOfRange(numero, 4, 8);
         System.out.println(Arrays.toString(array4) + "\n");
-
-
+        int[] in = {7, 1, 5, 2};
+        int pos = 2;
+        int e = 8;
+        System.out.println(Arrays.toString(insertado(in, pos, e)));
     }
-
     private static int[] arrayAleatorio(int num) {
-
         int[] a = new int[num];
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * 100);
         }
         return a;
     }
-
     private static void arrayInverso(int[] numero) {
         for (int i = numero.length - 1; i >= 0; i--) {
             System.out.print(numero[i] + " ");
         }
         System.out.println();
     }
-
     private static int[] ordenarArray(int[] numero) {
         Arrays.sort(numero);
         return numero;
     }
-
     private static int buscarArray(int[] input, int x) {
         for (int i = 0; i < input.length; i++) {
             if (x == input[i]) {
@@ -61,5 +58,16 @@ public class mainCorreccion {
             }
         }
         return -1;
+    }
+    public static int[] insertado(int[]in, int pos, int e){
+        int[] out = Arrays.copyOf(in, in.length + 1);
+        System.out.println("Antes de añadir un nuevo elemento: ");
+        System.out.println(Arrays.toString(out));
+        for (int i = out.length - 1; i > pos; i--) {
+            out[i] = out[i - 1];
+        }
+        out[pos] = e;
+        System.out.println("Después de añadir el elemento: ");
+        return out;
     }
 }
