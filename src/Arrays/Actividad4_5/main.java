@@ -35,8 +35,9 @@ public class main {
         int e = 8;
         int [] y = arrayAleatorio(2);
         System.out.println(Arrays.toString(insertado(numero, pos, e)));
-        System.out.println("Metodo imprimir añadiendo array: ");
+        System.out.println(" ");
         System.out.println(Arrays.toString(insertado2(numero, pos, y)));
+        System.out.println(" ");
         System.out.println("Metodo eliminando parte del código: ");
         boolean a = true;
         System.out.println(Arrays.toString(eliminado(numero, pos, a)));
@@ -78,15 +79,16 @@ public class main {
         return out;
     } // Este método nos inserta un valor añadido dentro de un array anteriormente creado.
     public static int[] insertado2(int[]in, int pos, int[] e){
-        int[] out = Arrays.copyOf(in, in.length + 1);
-        System.out.println("Antes de añadir un nuevo elemento: ");
+        int[] out = new int[in.length + 2];
+        out = Arrays.copyOf(in, in.length + 1);
+        System.out.println("Antes de añadir un nuevo array: ");
         System.out.println(Arrays.toString(out));
         for (int i = out.length - 1; i > pos; i--) {
             out[i] = out[i - 1];
         }
         int y = e.length - 1;
         out[pos] = e[y];
-        System.out.println("Después de añadir el elemento: ");
+        System.out.println("Después de añadir el array: ");
         return out;
     } // Este método nos inserta un array añadido dentro de un array anteriormente creado.
     // En mi caso no consigo añadir completamente el array nuevo
@@ -99,4 +101,9 @@ public class main {
         }
         return in;
     } // Este método elimina el número que se encuentre en la tercera posición de nuestro array
+    public static int[] paresPorImpares (int[] a){
+        int[] out = new int[a.length];
+
+        return out;
+    }
 }
