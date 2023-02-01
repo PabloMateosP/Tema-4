@@ -30,6 +30,9 @@ public class CaracteresToString {
         char [] f = {'c', 'o', 'r', 't', 'o'};
 
         //imprimirCadenaEnOrdenAlfabético(c,d,f,abecedario);
+
+        String A = "Hola a todo el mundo como estamos";
+        cambioCaracteres(A);
     }
     static void imprimirLongitud(char [] a){
 
@@ -63,6 +66,36 @@ public class CaracteresToString {
     // TODO: imprimirCadenaEnOrdenAlfabético imprimir en orden alfabético las cadenas dadas por un array de cadenas
     // ejmplo m({"corto", "bajo", "alto"}) --> alto, bajo, corto. Pero sin tener en cuenta las mayúsculas y las minúsculas.
 
-    // TODO: un método que dado un pequeño texto devuelva un array de cadenas codificando el texto, de modo que cada vez que aparezca el caracter punto (.) se corte esa frase y se meta en una posición del array y que todas las vocales se sustituyen por el número gratificánte más parecido por ejemplo o --> 0 ...
 
+
+    // TODO: un método que dado un pequeño texto devuelva un array de cadenas codificando el texto, de modo que cada vez que aparezca el caracter punto (.) se corte esa frase y se meta en una posición del array y que todas las vocales se sustituyen por el número gratificánte más parecido por ejemplo o --> 0 ...
+    public static void cambioCaracteres(String cadena){
+
+        char [] cadenaCaracteres = cadena.toCharArray();
+
+        System.out.println("Antes de la codificación:");
+        System.out.println(cadena);
+        System.out.println(" ");
+        System.out.println("Tras la codificación:");
+
+
+        for (int i = 0; i < cadenaCaracteres.length; i++) {
+            if (cadenaCaracteres[i] == 'a'){
+                cadenaCaracteres[i] = '4';
+
+            }if (cadenaCaracteres[i] == 'e'){
+                cadenaCaracteres[i] = '3';
+
+            }if (cadenaCaracteres[i] == 'i'){
+                cadenaCaracteres[i] = '1';
+
+            }if (cadenaCaracteres[i] == 'o'){
+                cadenaCaracteres[i] = '0';
+
+            }if (cadenaCaracteres[i] == 'u'){
+                cadenaCaracteres[i] = 'v';
+            }
+        }
+        System.out.println(Arrays.toString(cadenaCaracteres));
+    } // Copia código jorge ya que no sabía otra forma de hacerlo
 }
