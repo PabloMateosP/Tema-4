@@ -33,6 +33,12 @@ public class CaracteresToString {
 
         String A = "Hola a todo el mundo como estamos";
         cambioCaracteres(A);
+
+        int[] numbers = {2,1,11,10};
+        String [] conversion;
+        conversion = conversioonString(numbers);
+        System.out.println(Arrays.toString(conversion));
+        // Al imprimir parece que no se ordena, aunque en vd se hace un aordenación pero por las referencias de cada elemento
     }
     static void imprimirLongitud(char [] a){
 
@@ -63,8 +69,9 @@ public class CaracteresToString {
             //}
         //}
     //}
-    // TODO: imprimirCadenaEnOrdenAlfabético imprimir en orden alfabético las cadenas dadas por un array de cadenas
-    // ejmplo m({"corto", "bajo", "alto"}) --> alto, bajo, corto. Pero sin tener en cuenta las mayúsculas y las minúsculas.
+
+    //TODO: imprimirCadenaEnOrdenAlfabético imprimir en orden alfabético las cadenas dadas por un array de cadenas
+    // - ejemplo m({"corto", "bajo", "alto"}) --> alto, bajo, corto. Pero sin tener en cuenta las mayúsculas y las minúsculas.
 
 
 
@@ -98,4 +105,19 @@ public class CaracteresToString {
         }
         System.out.println(Arrays.toString(cadenaCaracteres));
     } // Copia código jorge ya que no sabía otra forma de hacerlo
+
+    //TODO Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
+    static String [] conversioonString(int [] numbers){
+        String [] conversion = new String[numbers.length];
+        // Conversión
+        for (int i = 0; i < numbers.length; i++){
+            conversion[i] = String.valueOf(numbers[i]);
+        }
+        // Ordenación
+        Arrays.sort(conversion);
+
+        return conversion;
+    }
+
+
 }
