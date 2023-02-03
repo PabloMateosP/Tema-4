@@ -1,4 +1,4 @@
-package Arrays.Practica;
+package Arrays.Ejemplos;
 
 public class StringExample {
     public static void main(String[] args) {
@@ -36,6 +36,7 @@ public class StringExample {
         System.out.println(num2 + "");
         System.out.println(String.valueOf(num2));
         // esto es lo mismo que el primero System.out.println(Integer.toString(num2));
+
 
     }
 }

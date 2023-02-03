@@ -1,4 +1,4 @@
-package Arrays.Practica;
+package Arrays.Ejemplos;
 public class RecorrerArray {
     public static void main(String[] args){
     int[] a = {7, -2, 5, 0, 6};

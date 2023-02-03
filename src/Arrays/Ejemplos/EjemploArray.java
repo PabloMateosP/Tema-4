@@ -1,4 +1,4 @@
-package Arrays.Practica;
+package Arrays.Ejemplos;
 
 public class EjemploArray {
     public static void main(String[] args) {
