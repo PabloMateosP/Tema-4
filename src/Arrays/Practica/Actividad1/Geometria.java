@@ -1,4 +1,4 @@
-package Arrays.Practica;
+package Arrays.Practica.Actividad1;
 
 public abstract class Geometria {
     Double area;
