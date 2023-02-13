@@ -5,12 +5,13 @@ import java.util.Arrays;
 public class Ejercicio3 {
     public static void main(String[] args) {
         int[] numeros = new int[100];
-        int mayor = numeros[0];
+
         int suma = 0;
         int numeroAnt = numeros[12];
         int numeroNue = numeros[13];
          numeroAleatorio(numeros);
-        numeroMayor( mayor, numeros);
+        numeroMayor( numeros);
+        numeroMenor(numeros);
         int sumados = numeroSuma(suma, numeros);
         double media = (double) sumados/numeros.length;
         System.out.println(media);
@@ -24,13 +25,24 @@ public class Ejercicio3 {
             numeros[i] = (int) (Math.random() * 100);
         }
     }
-    static int numeroMayor (int mayor, int[] numeros){
-        for (int i = 1; i < numeros.length; i++) {
+    static int numeroMayor ( int[] numeros){
+        int mayor = 0;
+        for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] > mayor) {
                 mayor = numeros[i];
             }
         }
         System.out.println("El número mayor del array es: " + mayor);
+        return mayor;
+    }
+    static int numeroMenor ( int[] numeros){
+        int mayor = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] < mayor) {
+                mayor = numeros[i];
+            }
+        }
+        System.out.println("El número menor del array es: " + mayor);
         return mayor;
     }
     static int numeroSuma (int suma, int[] numeros){
@@ -41,14 +53,12 @@ public class Ejercicio3 {
         return suma;
     }
     static void numeroSustituir (int[] numeros, int numeroAnt, int numeroNue){
-        for (int i = 0; i < numeros.length; i++) {
-            if (numeros[i] == numeroAnt) {
-                numeros[i] = numeroNue;
+        int [] numeros2 = numeros.clone();
+         for (int i = 0; i < numeros2.length; i++) {
+            if (numeros2[i] == numeroAnt) {
+                numeros2[i] = numeroNue;
             }
         }
-        for (int i = 0; i < numeros.length; i++) {
-            System.out.println(numeros[i]);
-        }
-        System.out.println(Arrays.toString(numeros));
+        System.out.println(Arrays.toString(numeros2));
     }
 }

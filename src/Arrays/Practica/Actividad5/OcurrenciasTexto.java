@@ -3,7 +3,7 @@ package Arrays.Practica.Actividad5;
 public class OcurrenciasTexto {
     public static void main(String[] args) {
         System.out.println("Introduce el texto: ");
-        String texto = "habia un barquito velero que navegaba por el mediterraneo en un día muy movido hasta que encontro una isla donde habia gente";
+        String texto = "habia un barquito velero que navegaba por el mediterraneo en un día muy movido hasta que se acerco a una isla donde habia gente";
         System.out.println("Introduce la palabra a buscar: ");
         String palabra = "habia";
 

@@ -1,6 +1,6 @@
 package Arrays.Practica.Actividad4;
 
-public class DniValidator {
+public class DniValidador {
     public static void main(String[] args) {
 
         System.out.print("Ingrese su DNI: ");
