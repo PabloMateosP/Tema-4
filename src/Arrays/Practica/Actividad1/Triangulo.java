@@ -1,19 +1,19 @@
 package Arrays.Practica.Actividad1;
 
-import Arrays.Practica.Actividad1.Coloreable;
-import Arrays.Practica.Actividad1.Geometria;
-
 public class Triangulo extends Geometria implements Coloreable {
-    Double base;
-    Double altura;
+    protected Double base;
+    protected Double altura;
+    Triangulo (double base, double altura){
+
+    }
 
     @Override
-    double calcularArea() {
+    protected double calcularArea() {
         return (base * altura)/2;
     }
 
     @Override
-    double calcularPerimetro() {
+    protected double calcularPerimetro() {
         return 3 * base;
     }
 }

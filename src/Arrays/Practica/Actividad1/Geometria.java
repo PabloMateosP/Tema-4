@@ -1,9 +1,10 @@
 package Arrays.Practica.Actividad1;
 
 public abstract class Geometria {
-    Double area;
-    Double perimetro;
+    protected Double area;
+    protected Double perimetro;
 
-    abstract double calcularArea();
-    abstract double calcularPerimetro();
+    protected abstract double calcularArea();
+
+    protected abstract double calcularPerimetro();
 }

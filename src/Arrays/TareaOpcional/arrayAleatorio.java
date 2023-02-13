@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class arrayAleatorio {
     public static void main(String[] args) {
         String [] a = {"Adri", "Juanma Herrera", "Dani", "David", "Juan Manuel Saborido", "Juan María", "Victor", "Pepe", "Jonathan", "Juan Jesús", "Pablo", "Julián", "Diego", "Antonio", "Jorge", "Fran", "Jossie", "Ricardo" };
-        //aleatoriedad(a);
+        aleatoriedad(a);
         System.out.println(Arrays.toString(a));
 
         int i = (int) (Math.random() * 18);

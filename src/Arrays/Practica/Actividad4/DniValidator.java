@@ -1,10 +1,5 @@
 package Arrays.Practica.Actividad4;
 
-import java.lang.constant.Constable;
-import java.util.Scanner;
-
-import java.util.Scanner;
-
 public class DniValidator {
     public static void main(String[] args) {
 

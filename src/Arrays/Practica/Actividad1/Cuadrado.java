@@ -2,14 +2,17 @@ package Arrays.Practica.Actividad1;
 
 public class Cuadrado extends Geometria implements Coloreable {
     Double lado;
+    Cuadrado (double lado){
+        this.lado = lado;
+    }
 
     @Override
-    double calcularArea() {
+    protected double calcularArea() {
         return lado * lado;
     }
 
     @Override
-    double calcularPerimetro() {
+    protected double calcularPerimetro() {
         return 4 * lado;
     }
 }
