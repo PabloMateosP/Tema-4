@@ -1,6 +1,5 @@
 package Arrays.Actividad4_5;
 
-import java.io.OutputStream;
 import java.util.Arrays;
 
 public class main {
